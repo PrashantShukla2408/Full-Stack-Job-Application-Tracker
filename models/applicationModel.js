@@ -10,6 +10,10 @@ const Application = sequelize.define("Application", {
     allowNull: false,
     primaryKey: true,
   },
+  jobTitle: {
+    type: Sequelize.STRING,
+    allowNull: false,
+  },
   companyName: {
     type: Sequelize.STRING,
     allowNull: false,

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #157152;
+    margin-top: 20px;
+}
+
+button#addCompanyButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 1rem;
+}
+
+button#addCompanyButton:hover {
+    background-color: #0056b3;
+}
+
+#companyContainer {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+#companyTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#companyTable th, #companyTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#companyTable th {
+    background-color: #157152;
+    color: white;
+}
+
+#companyTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#companyTable tr:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    #companyContainer {
+        max-width: 90%;
+        padding: 15px;
+    }
+}

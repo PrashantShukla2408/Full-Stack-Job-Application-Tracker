@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfe;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #157152;
+    margin-top: 20px;
+}
+
+#addJobButton {
+    background-color: #157152;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    font-size: 1rem;
+}
+
+#addJobButton:hover {
+    background-color: #125d48;
+}
+
+#searchcontainer {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#searchInput {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid #157152;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#statusFilter {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #157152;
+}
+
+#jobsContainer {
+    margin: 20px auto;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+thead {
+    background-color: #157152;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+@media (max-width: 768px) {
+    #searchInput, #statusFilter {
+        width: 90%;
+    }
+}

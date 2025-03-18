@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(21, 113, 82);
+}
+
+#addJobForm {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: rgb(21, 113, 82);
+    outline: none;
+    background-color: #fff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgb(21, 113, 82);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: rgb(17, 90, 65);
+}
+
+@media (max-width: 768px) {
+    #addJobForm {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input, select, textarea {
+        font-size: 0.9rem;
+    }
+}

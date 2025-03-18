@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    background-color: rgb(21, 113, 82);
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700;
+}
+
+#logoutButton {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+#logoutButton:hover {
+    background-color: #c9302c;
+}
+
+#nameContainer,
+#profileContainer,
+#careerGoalsContainer {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#nameContainer h2,
+#profileContainer h2,
+#careerGoalsContainer h2 {
+    color: #136d6d;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#nameContainer p,
+#profileContainer p,
+#careerGoalsContainer p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#visualStatsContainer {
+    width: 90%;
+    max-width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#jobStatusChart {
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px;
+    }
+
+    #logoutButton {
+        width: 90%;
+    }
+
+    #nameContainer,
+    #profileContainer,
+    #careerGoalsContainer,
+    #visualStatsContainer {
+        width: 95%;
+    }
+}
